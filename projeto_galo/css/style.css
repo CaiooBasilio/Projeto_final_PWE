@@ -2,39 +2,49 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* HEADER */
-header{
+header div{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background-color: black;
 }
-header img:hover{
-    cursor: pointer;
-}
-header nav ul{
+header div >nav ul{
     display: flex;
     list-style: none;
-    justify-content: center;
-    /* border: solid 2px green; */
 }
-header nav ul li{
-    /* border: 2px solid white; */
+header div nav ul li{
+    padding: 5px;
+    text-align: center;
+    margin: 5px 5px;
+    background-color: rgba(32, 32, 32, 0.4);
+    transition: all 0.3s;
 }
-header input[type="button"]{
-    background-color: rgba(32, 32, 32, 0.7);
-    border: rgba(32, 32, 32, 0.7);
-    color: white;
-    padding: 15px;
-    margin: 10px 5px;
-    border-radius: 5px;
+header a:link, header a:visited{
+    text-decoration: none;
+    color:white;
 }
-header input[type="button"]:hover{
+header li:hover, header a:hover{
     cursor: pointer;
     color: darkgoldenrod;
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
 }
-header input[type="button"]:active{
-    transform: translatey(1px);
+header li:active{
+    border-bottom: 1px solid darkgoldenrod;
+    transform: translateY(2px);
+}
+
+@media screen and (min-width:767px) {
+    header div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div nav ul li{
+        padding: 25px;
+    }
+    header a{
+        font-size: 18px;
+    }
 }
