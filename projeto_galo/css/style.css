@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+header img:hover{
+    cursor: pointer;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* border: solid 2px green; */
+}
+header nav ul li{
+    /* border: 2px solid white; */
+}
+header input[type="button"]{
+    background-color: rgba(32, 32, 32, 0.7);
+    border: rgba(32, 32, 32, 0.7);
+    color: white;
+    padding: 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+header input[type="button"]:hover{
+    cursor: pointer;
+    color: darkgoldenrod;
+    background-color: rgb(30,30,30);
+}
+header input[type="button"]:active{
+    transform: translatey(1px);
+}
