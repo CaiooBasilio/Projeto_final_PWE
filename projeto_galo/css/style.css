@@ -49,9 +49,10 @@ section{
     flex-direction: column;
     padding: 10px;
 }
-.começo h1{
+.começo figcaption{
     text-align: center;
     color: darkgoldenrod;
+    margin-bottom: 10px;
 }
 .começo p{
     text-align: justify;
@@ -72,5 +73,14 @@ section{
     }
     section{
         width: 1200px;
+    }
+    .começo>div{
+        flex-direction: row;
+    }
+    .começo div{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
     }
 }
