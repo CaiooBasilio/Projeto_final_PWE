@@ -19,7 +19,7 @@ header div nav ul li{
     padding: 5px;
     text-align: center;
     margin: 5px 5px;
-    background-color: rgba(32, 32, 32, 0.4);
+    background-color: rgba(32, 32, 32);
     transition: all 0.3s;
 }
 header a:link, header a:visited{
