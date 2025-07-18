@@ -43,6 +43,12 @@ header li:active{
 section{
     margin: auto;
     background-color: white;
+    margin-top: 5px;
+}
+section figcaption{
+    text-align: center;
+    color: darkgoldenrod;
+    margin-bottom: 10px;
 }
 .começo div{
     display: flex;
@@ -50,15 +56,33 @@ section{
     padding: 10px;
 }
 .começo figcaption{
-    text-align: center;
-    color: darkgoldenrod;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .começo p{
     text-align: justify;
     line-height: 20px;
 }
 
+.idolos>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.idolos figcaption{
+    color:black;
+    padding-top: 20px;
+}
+.idolos h1 {
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+.idolos p{
+    text-align: justify;
+}
 @media screen and (min-width:767px) {
     /* HEADER */
     header div{
@@ -82,5 +106,18 @@ section{
         text-align: justify;
         align-items: center;
         justify-content: center;
+    }
+    .idolos >div>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 2px solid darkgoldenrod;
+    }
+    .reverso{
+        flex-direction: row-reverse;
+    }
+    .idolos >div>div p{
+        padding: 15px;
     }
 }
