@@ -83,6 +83,7 @@ section figcaption{
 }
 .idolos p{
     text-align: justify;
+    padding: 10px;
 }
 @media screen and (min-width:767px) {
     /* HEADER */
