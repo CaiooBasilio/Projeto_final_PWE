@@ -85,6 +85,42 @@ section figcaption{
     text-align: justify;
     padding: 10px;
 }
+
+.rivais>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.rivais p{
+    text-align: justify;
+    padding-top: 10px;
+}
+.rivais>div div{
+    padding: 15px;
+    border: 2px solid darkgoldenrod;
+}
+.rivais figcaption{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: black;
+    color: darkgoldenrod;
+}
+footer a:link, footer a:visited{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    cursor: pointer;
+}
 @media screen and (min-width:767px) {
     /* HEADER */
     header div{
@@ -114,12 +150,18 @@ section figcaption{
         align-items: center;
         justify-content: center;
         padding: 10px;
-        border: 2px solid darkgoldenrod;
+        border-bottom: 2px solid darkgoldenrod;
     }
     .reverso{
         flex-direction: row-reverse;
     }
     .idolos >div>div p{
         padding: 15px;
+    }
+    .rivais >div {
+        flex-direction: row;
+    }
+    .rivais>div div{
+        border: 0px solid darkgoldenrod;
     }
 }
