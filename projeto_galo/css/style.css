@@ -7,6 +7,9 @@
 body{
     background-color: rgb(65, 65, 65);
 }
+p{
+    text-align: justify;
+}
 /* HEADER */
 header div{
     display: flex;
@@ -61,7 +64,6 @@ section figcaption{
     margin-bottom: 5px;
 }
 .começo p{
-    text-align: justify;
     line-height: 20px;
 }
 .inicio h1{
@@ -89,7 +91,6 @@ section figcaption{
     color: darkgoldenrod;
 }
 .idolos p{
-    text-align: justify;
     padding: 10px;
 }
 .brasileiro>div{
@@ -98,7 +99,6 @@ section figcaption{
     padding: 10px;
 }
 .brasileiro>div p{
-    text-align: justify;
     padding-bottom: 10px;
 }
 .brasileiro>div div {
@@ -119,13 +119,51 @@ section figcaption{
     color: darkgoldenrod;
     text-align: center;
 }
-.segunda p{
-    text-align: justify;
-}
 .segunda div{
     display: flex;
     flex-direction: column;
     padding: 15px;
+}
+.brasil div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.brasil h1{
+    text-align: center;
+    color: darkgoldenrod;
+    padding-bottom: 10px;
+}
+.brasil h2{
+    text-align: center;
+    color: darkgoldenrod;
+}
+.jogo > figcaption p{
+    text-align: center;
+}
+.campanha h2{
+    text-align: center;
+    color: darkgoldenrod;
+    padding-top: 10px;
+}
+.campanha .jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.final h1{
+    text-align: center;
+    color: darkgoldenrod;
+    padding: 10px;
+}
+.final >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
 }
 
 .rivais>div{
@@ -136,12 +174,10 @@ section figcaption{
     justify-content: center;
 }
 .rivais p{
-    text-align: justify;
     padding-top: 10px;
 }
 .rivais>div div{
     padding: 15px;
-    border: 2px solid darkgoldenrod;
 }
 .rivais figcaption{
     font-size: 30px;
@@ -203,6 +239,20 @@ footer a:hover{
     }
     .segunda {
         padding: 10px;
+    }
+    .brasil div > .first{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .brasil div > .partidas{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .quarta{
+        display: flex;
+        align-items: center;
     }
 
     .idolos >div>div {
