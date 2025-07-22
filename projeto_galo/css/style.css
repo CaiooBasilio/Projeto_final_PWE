@@ -110,8 +110,22 @@ section figcaption{
 .brasileiro>div div img{
     padding: 10px 0px;
 }
-.brasileiro>div div h2{
+.brasileiro  h2{
     color:darkgoldenrod;
+    text-align: center;
+}
+.segunda h2{
+    padding-top: 10px;
+    color: darkgoldenrod;
+    text-align: center;
+}
+.segunda p{
+    text-align: justify;
+}
+.segunda div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
 .rivais>div{
@@ -178,7 +192,18 @@ footer a:hover{
     .inicio h1{
         padding-bottom: 15px;
     }
-
+    .brasileiro>div div{
+        flex-direction: row;
+    }
+    .segunda >div> div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .segunda {
+        padding: 10px;
+    }
 
     .idolos >div>div {
         display: flex;
